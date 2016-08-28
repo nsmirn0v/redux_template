@@ -12,7 +12,7 @@ class ContainerTemplate extends Component {
   }
 }
 
-const mapStateToProps = state => state
+const mapStateToProps = state => ({ value: state.reducerTemplate.value })
 const mapDispatchToPrpos = dispatch => bindActionCreators(actions, dispatch)
 
 export default connect(
